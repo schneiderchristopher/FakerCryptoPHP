@@ -10,9 +10,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2 # Use v2 for stability
 
-      - name: Build Docker Image
-        run: |
-          docker build -t faker-crypto-php .
+      - name: Setting up PHP
+        uses: ./.github/
 
       - name: Running Composer Install
         run: |

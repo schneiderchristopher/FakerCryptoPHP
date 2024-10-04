@@ -1,5 +1,4 @@
-FROM php:8.2-cli
-
+FROM php:8.3.12
 WORKDIR /var/www
 
 # Install zip and unzip using apt-get
