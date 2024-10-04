@@ -8,10 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@v2 # Use v2 for stability
 
-      - name: Setting up PHP
-        uses: ./.github/
+      - name: Build Docker Image
+        run: |
+          docker build -t faker-crypto-php .
 
       - name: Running Composer Install
         run: |
