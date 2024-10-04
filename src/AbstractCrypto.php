@@ -10,11 +10,25 @@ abstract class AbstractCrypto extends \Faker\Provider\Base
   protected static $codes = [];
 
   /**
-   * Random crypto 3 digit code
+   * @var string[] List of crypto coins names
+   */
+  protected static $cryptoCoinNames = [];
+
+  /**
+   * Returns a random crypto 3 digit code
    * @return string
   */
   public function cryptoCode()
   {
     return static::randomElement(static::$codes);
+  }
+
+  /**
+   * Returns a random crypto coin name
+   * @return string
+   */
+  public function cryptoCoinName()
+  {
+    return static::randomElement(static::$cryptoCoinNames);
   }
 }

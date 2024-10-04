@@ -21,6 +21,13 @@ final class CryptoTest extends TestCase
     });
   }
 
+  public function testCanReturnCryptoName(): void
+  {
+    $this->testIterator(static function (Generator $faker) {
+        return $faker->cryptoCoinName();
+    });
+  }
+
   private function testIterator(callable $func): void
   {
     foreach ($this->folder as $folder) {
