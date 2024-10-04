@@ -4,6 +4,8 @@ use PHPUnit\Framework\TestCase;
 use Faker\Factory;
 use Faker\Generator;
 
+require_once __DIR__ . '/../src/utils/Utils.php';
+
 final class CryptoTest extends TestCase
 {
   protected $folder;
@@ -31,6 +33,7 @@ final class CryptoTest extends TestCase
   private function testIterator(callable $func): void
   {
     foreach ($this->folder as $folder) {
+      $folder = convertToUpperCase($folder);
       $class = 'FakerCryptoPHP\\Provider\\' . $folder . '\\Crypto';
       if (class_exists($class)) {
           $faker = Factory::create();
