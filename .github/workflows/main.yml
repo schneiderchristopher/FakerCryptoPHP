@@ -17,6 +17,7 @@ jobs:
         run: |
           rm -rf ./vendor
           rm -rf ./src/Provider/en_us
+          composer dump-autoload -o
 
       - name: Setting up PHP
         uses: shivammathur/setup-php@v2
