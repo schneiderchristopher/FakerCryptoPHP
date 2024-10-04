@@ -13,6 +13,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2 # Use v2 for stability
 
+      - name: Cleanup
+        run: |
+          rm -rf ./vendor
+          rm -rf ./src/Provider/en_us
+          rm -rf ./src/Provider/en_US
+
       - name: Setting up PHP
         uses: shivammathur/setup-php@v2
         with:
