@@ -1,6 +1,6 @@
 <?php
 
-namespace FakerCryptoPHP\Provider\en_us;
+namespace FakerCryptoPHP\Provider\en_US;
 
 use FakerCryptoPHP\AbstractCrypto;
 

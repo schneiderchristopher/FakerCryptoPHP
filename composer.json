@@ -1,23 +1,24 @@
 {
-    "name": "schneiderchristopher/faker-crypto-php",
-    "description": "Faker crypto related for FakerPHP",
-    "type": "library",
-    "require": {
-        "fakerphp/faker": "^1.23"
-    },
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Schneiderchristopher\\FakerCryptoPhp\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Christopher Schneider",
-            "email": "schneiderchristopher16@gmail.com"
-        }
-    ],
-    "require-dev": {
-        "phpstan/phpstan": "^1.12"
+  "name": "schneiderchristopher/faker-crypto-php",
+  "description": "Faker crypto related for FakerPHP",
+  "type": "library",
+  "require": {
+    "fakerphp/faker": "^1.23"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "FakerCryptoPhp\\": "src/"
     }
+  },
+  "authors": [
+    {
+      "name": "Christopher Schneider",
+      "email": "schneiderchristopher16@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "phpstan/phpstan": "^1.12",
+    "phpunit/phpunit": "^11.3"
+  }
 }
