@@ -14,6 +14,7 @@ final class CryptoTest extends TestCase
   {
     parent::setUp();
     $this->folder = array_diff(scandir('src/Provider'), array('..', '.'));
+    var_dump($this->folder);
   }
 
   public function testCanReturnCryptoCode(): void
