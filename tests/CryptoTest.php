@@ -4,8 +4,6 @@ use PHPUnit\Framework\TestCase;
 use Faker\Factory;
 use Faker\Generator;
 
-require_once __DIR__ . '/../src/Utils/Utils.php';
-
 final class CryptoTest extends TestCase
 {
   protected $folder;
