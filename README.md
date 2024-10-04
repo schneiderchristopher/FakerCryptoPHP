@@ -9,8 +9,11 @@ You can install the library using Composer. Run the following command in your te
 ```bash
 composer require schneiderchristopher/faker-crypto-php
 ```
+
 ## Usage
+
 To use this with Faker, you must add the FakerCryptoPHP\Crypto class to the Faker generator:
+
 ```php
 <?php
 
@@ -18,7 +21,7 @@ $faker = \Faker\Factory::create();
 $faker->addProvider(new \FakerCryptoPHP\Provider\en_US\Crypto($faker));
 
 $faker->cryptoCode(); // Returns a fake coin code eg: (BTC, ETH)
-$faker->cryptoName(); // Returns a fake coin name eg: (Dogecoin, Solana)
+$faker->cryptoCoinName(); // Returns a fake coin name eg: (Dogecoin, Solana)
 ```
 
 ## Contribution
