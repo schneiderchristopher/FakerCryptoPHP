@@ -1,9 +1,14 @@
 <?php
 
+namespace FakerCryptoPHP\Provider\en_us;
+
 use FakerCryptoPHP\AbstractCrypto;
 
 class Crypto extends AbstractCrypto
 {
+  /**
+   * @var string[] List of 3 digit crypto codes
+   */
   protected static $codes = [
     'DPI', 'CFV', 'EGG', 'YMD', 'OSV', 'LNC', 'UDP', 'SWM', 'DAI', 'DSO',
     'AEH', 'EPV', 'CST', 'NJK', 'VEH', 'ZPW', 'RZT', 'BNI', 'KVG', 'LQR',
