@@ -1,6 +1,5 @@
 FROM php:8.3.12
 WORKDIR /var/www
-COPY . .
 
 # Install zip and unzip using apt-get
 RUN apt-get update && apt-get install -y \

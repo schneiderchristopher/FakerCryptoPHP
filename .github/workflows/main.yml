@@ -28,10 +28,6 @@ jobs:
           chmod +x ./.github/scripts/run-phpstan.sh
           ./.github/scripts/run-phpstan.sh
 
-      - name: Check directory structure
-        run: |
-          ls -R ./src
-
       - name: Running PHPUnit
         run: |
           chmod +x ./.github/scripts/run-phpunit.sh
