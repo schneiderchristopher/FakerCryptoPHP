@@ -11,7 +11,9 @@ jobs:
         uses: actions/checkout@v2 # Use v2 for stability
 
       - name: Setting up PHP
-        uses: ./.github/
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.3"
 
       - name: Running Composer Install
         run: |
