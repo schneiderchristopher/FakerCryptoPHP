@@ -33,7 +33,6 @@ final class CryptoTest extends TestCase
   private function testIterator(callable $func): void
   {
     foreach ($this->folder as $folder) {
-      $folder = convertToUpperCase($folder);
       $class = 'FakerCryptoPHP\\Provider\\' . $folder . '\\Crypto';
       if (class_exists($class)) {
           $faker = Factory::create();
